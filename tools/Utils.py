@@ -3,9 +3,13 @@
 
 import subprocess
 
-def Generate(fileName):
+def Generate(fileName, fileType):
 
-    cmd = "java -jar plantuml.jar " + fileName
+    if fileType == "png":
+        cmd = "java -jar plantuml.jar " + fileName
+    else:
+        cmd = "java -jar plantuml.jar -tsvg " + fileName
+
     process = subprocess.Popen(cmd.split(" "), stdout=subprocess.PIPE)
     output, error = process.communicate()
 

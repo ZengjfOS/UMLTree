@@ -6,6 +6,7 @@ from tools.Utils import Generate
 
 srcFileName = "mkList.txt"
 outFileName = "mkList_temp.txt"
+outFileType = "svg"
 
 def M2PlantTree():
     readfp = open(srcFileName, "r", encoding='UTF-8') 
@@ -35,7 +36,7 @@ def M2PlantTree():
     writefp.close()
     readfp.close()
 
-    Generate(outFileName)
+    Generate(outFileName, outFileType)
 
 if __name__ == '__main__':
     M2PlantTree()

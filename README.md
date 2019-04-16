@@ -1,6 +1,8 @@
 # README
 
 * M2PlantT: Markdown List To PlantUML Tree
+* [**Visual Studio Code Plugin**](https://marketplace.visualstudio.com/items?itemName=okazuki.okazukiplantuml)
+* [PlantUML Online](http://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
 
 ## 参考文档
 
@@ -16,5 +18,7 @@
 ## 使用说明
 
 * 如[mkList.txt](mkList.txt)中放入Markdown List数据；
-* 运行[M2PlantT.py](M2PlantT.py)，输出文件
+* 运行[M2PlantT.py](M2PlantT.py)，输出png文件：
   ![mkList_temp.png](mkList_temp.png)
+* 或者svg文件：
+  ![mkList_temp.svg](mkList_temp.svg)
