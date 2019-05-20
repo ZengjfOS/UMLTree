@@ -6,6 +6,7 @@ from tools.Utils import Generate
 
 srcFileName = "mkList.txt"
 outFileName = "mkList_temp.txt"
+# png/svg
 outFileType = "svg"
 
 def M2PlantTree():
@@ -23,6 +24,9 @@ def M2PlantTree():
         for index in range(len(line)):
             if ' ' == line[index]:
                 outLine += '+'
+
+            if '\t' == line[index]:
+                outLine += '++++'
 
             if '*' == line[index]:
                 break
